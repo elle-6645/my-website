@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Unit Converter</title>
+</head>
+<body>
+  <h2>Unit Converter</h2>
+  <input type="number" id="value" placeholder="Enter value" min="0">
+  <select id="conversion">
+    <option value="km-to-miles">Kilometers → Miles</option>
+    <option value="miles-to-km">Miles → Kilometers</option>
+  </select>
+  <button onclick="convert()">Convert</button>
+  <button onclick="goBack()">Back</button>
+  <div id="result"></div>
+
+  <script>
+    function convert() {
+      const value = parseFloat(document.getElementById('value').value);
+      const conversion = document.getElementById('conversion').value;
+      let result = '';
+
+      if (isNaN(value) || value < 0) {
+        result = '⚠️ Please enter a valid positive number.';
+      } else {
+        if (conversion === 'km-to-miles') {
+          result = `${value} km = ${(value * 0.621371).toFixed(2)} miles`;
+        } else {
+          result = `${value} miles = ${(value / 0.621371).toFixed(2)} km`;
+        }
+      }
+      document.getElementById('result').textContent = result;
+    }
+
+    function goBack() {
+      window.location.href = "index.html";
+    }
+  </script>
+</body>
+</html>

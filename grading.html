@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Grading System</title>
+</head>
+<body>
+  <h2>Student Grading System</h2>
+  <form>
+    <label for="studentName">Student Name:</label>
+    <input type="text" id="studentName" required>
+    <br><br>
+
+    <label for="score">Enter Score (0-100):</label>
+    <input type="number" id="score" min="0" max="100" required>
+    <br><br>
+
+    <button type="button" onclick="calculateGrade()">Calculate Grade</button>
+    <button type="button" onclick="goBack()">Back</button>
+  </form>
+
+  <h3 id="result"></h3>
+
+  <script>
+    function calculateGrade() {
+      let name = document.getElementById("studentName").value.trim();
+      let score = Number(document.getElementById("score").value);
+
+      if (!name) {
+        document.getElementById("result").innerHTML = "⚠️ Please enter the student's name.";
+        return;
+      }
+      if (isNaN(score) || score < 0 || score > 100) {
+        document.getElementById("result").innerHTML = "⚠️ Please enter a score between 0 and 100.";
+        return;
+      }
+
+      let grade;
+      if (score >= 90) grade = "A";
+      else if (score >= 80) grade = "B";
+      else if (score >= 70) grade = "C";
+      else if (score >= 60) grade = "D";
+      else grade = "F";
+
+      document.getElementById("result").innerHTML =
+        "Student: " + name + "<br>" +
+        "Score: " + score + "<br>" +
+        "Grade: " + grade;
+    }
+
+    function goBack() {
+      window.location.href = "index.html";
+    }
+  </script>
+</body>
+</html>
