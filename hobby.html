@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elle - Hobbies</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+    color:#333;
+    line-height:1.6;
+}
+
+.container{
+    max-width:1000px;
+    margin:30px auto;
+    background:#fff;
+    display:grid;
+    grid-template-columns:300px 1fr;
+    box-shadow:0 5px 20px rgba(0,0,0,.15);
+}
+
+.sidebar{
+    background:#1f3c88;
+    color:white;
+    padding:30px;
+}
+
+.sidebar h1{
+    font-size:30px;
+}
+
+.sidebar h2{
+    margin-top:25px;
+    border-bottom:1px solid rgba(255,255,255,.3);
+    padding-bottom:8px;
+    margin-bottom:10px;
+    font-size:18px;
+}
+
+.sidebar p,
+.sidebar li{
+    font-size:14px;
+}
+
+.sidebar ul{
+    padding-left:18px;
+}
+
+.content{
+    padding:35px;
+}
+
+section{
+    margin-bottom:30px;
+}
+
+h2{
+    color:#1f3c88;
+    margin-bottom:12px;
+}
+
+.job{
+    margin-bottom:20px;
+}
+
+.job h3{
+    color:#222;
+}
+
+.job span{
+    color:#777;
+    font-size:14px;
+}
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.skill{
+    background:#1f3c88;
+    color:white;
+    padding:6px 12px;
+    border-radius:20px;
+    font-size:13px;
+}
+
+@media(max-width:768px){
+
+.container{
+grid-template-columns:1fr;
+}
+
+.sidebar{
+text-align:center;
+}
+
+.skills{
+justify-content:center;
+}
+
+}
+
+
+/* Hobby page */
+.content p {
+    margin-bottom: 8px;
+}
+
+.content ul {
+    padding-left: 20px;
+}
+
+.content li {
+    margin-bottom: 5px;
+}
+
+@media(max-width:768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        text-align: center;
+    }
+
+    .skills {
+        justify-content: center;
+    }
+}
+
+.site-nav {
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.site-nav a {
+    display: inline-block;
+    background: rgba(255,255,255,.12);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 13px;
+}
+.site-nav a:hover {
+    background: rgba(255,255,255,.25);
+}
+.back-button {
+    display: inline-block;
+    margin-top: 25px;
+    background: #1f3c88;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.back-button:hover {
+    opacity: .9;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav class="site-nav" style="margin:15px 0;">
+    <a href="index.html" style="background:#1f3c88;color:white;padding:8px 12px;border-radius:5px;text-decoration:none;">← Resume</a>
+    <a href="hobby.html" style="background:#1f3c88;color:white;padding:8px 12px;border-radius:5px;text-decoration:none;">Hobbies</a>
+    <a href="distance.html" style="background:#1f3c88;color:white;padding:8px 12px;border-radius:5px;text-decoration:none;">Distance</a>
+    <a href="change.html" style="background:#1f3c88;color:white;padding:8px 12px;border-radius:5px;text-decoration:none;">Change</a>
+    <a href="grading.html" style="background:#1f3c88;color:white;padding:8px 12px;border-radius:5px;text-decoration:none;">Grading</a>
+    <a href="converter.html" style="background:#1f3c88;color:white;padding:8px 12px;border-radius:5px;text-decoration:none;">Converter</a>
+</nav>
+
+<div class="container">
+
+<div class="sidebar">
+
+<h1>Elle</h1>
+<p>My Hobbies</p>
+
+<h2>Favorite Activities</h2>
+
+<div class="skills">
+<div class="skill">Reading</div>
+<div class="skill">Traveling</div>
+<div class="skill">Photography</div>
+<div class="skill">Gaming</div>
+<div class="skill">Cooking</div>
+<div class="skill">Music</div>
+</div>
+
+<h2>Sports</h2>
+
+<ul>
+<li>Badminton</li>
+<li>Swimming</li>
+<li>Cycling</li>
+</ul>
+
+<h2>Favorite Foods</h2>
+
+<ul>
+<li>Fried Chicken</li>
+<li>Burmese Salad</li>
+<li>Bubble Tea</li>
+</ul>
+
+</div>
+
+<div class="content">
+
+<section>
+
+<h2>About My Hobbies</h2>
+
+<p>
+I enjoy spending my free time learning new things, relaxing, and spending time with family and friends. My hobbies help me stay creative, healthy, and motivated.
+</p>
+
+</section>
+
+<section>
+
+<h2>Indoor Hobbies</h2>
+
+<div class="job">
+<h3>Reading Books</h3>
+<p>I enjoy reading technology articles, novels, and self-improvement books.</p>
+</div>
+
+<div class="job">
+<h3>Playing Games</h3>
+<p>I enjoy playing games with friends to relax after studying.</p>
+</div>
+
+<div class="job">
+<h3>Listening to Music</h3>
+<p>Music helps me concentrate and reduces stress.</p>
+</div>
+
+</section>
+
+<section>
+
+<h2>Outdoor Hobbies</h2>
+
+<div class="job">
+<h3>Traveling</h3>
+<p>I enjoy exploring new places and learning about different cultures.</p>
+</div>
+
+<div class="job">
+<h3>Photography</h3>
+<p>I like taking pictures of nature and beautiful scenery.</p>
+</div>
+
+<div class="job">
+<h3>Sports</h3>
+<p>Playing badminton and swimming keeps me active and healthy.</p>
+</div>
+
+</section>
+
+</div>
+
+</div>
+<div style="margin:20px 0;"><a class="back-button" href="index.html">← Back to Resume</a></div>
+</body>
+</html>
