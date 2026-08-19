@@ -1,0 +1,23 @@
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,Helvetica,sans-serif}
+body{background:#f4f4f4;color:#333;line-height:1.6}
+.container{max-width:1000px;margin:30px auto;background:#fff;display:grid;grid-template-columns:300px 1fr;box-shadow:0 5px 20px rgba(0,0,0,.15)}
+.sidebar{background:#1f3c88;color:white;padding:30px}
+.sidebar h1{font-size:30px}
+.sidebar h2{margin-top:25px;border-bottom:1px solid rgba(255,255,255,.3);padding-bottom:8px;margin-bottom:10px;font-size:18px}
+.sidebar p,.sidebar li{font-size:14px}.sidebar ul{padding-left:18px}
+.content{padding:35px}section{margin-bottom:30px}h2{color:#1f3c88;margin-bottom:12px}
+.job{margin-bottom:20px}.job h3{color:#222}.job span{color:#777;font-size:14px}
+.skills{display:flex;flex-wrap:wrap;gap:10px}.skill{background:#1f3c88;color:white;padding:6px 12px;border-radius:20px;font-size:13px}
+.content p{margin-bottom:8px}.content ul{padding-left:20px}.content li{margin-bottom:5px}
+.site-nav{display:flex;flex-wrap:wrap;gap:8px;margin:15px 0}
+.site-nav a,.back-button{display:inline-block;background:#1f3c88;color:white;padding:9px 13px;border-radius:5px;text-decoration:none;font-size:13px}
+.site-nav a:hover,.back-button:hover,button:hover{opacity:.9}
+.back-button{margin-top:20px;font-size:14px}
+.page-section{max-width:1000px;margin:30px auto;background:#fff;padding:35px;box-shadow:0 5px 20px rgba(0,0,0,.15)}
+.page-section h2{color:#1f3c88}
+.page-section input,.page-section select{padding:8px;margin:5px 0}
+button{background:#1f3c88;color:white;border:none;padding:9px 15px;border-radius:5px;cursor:pointer;margin:5px 5px 5px 0}
+#result,#distanceResult,#changeResult,#gradingResult,#converterResult{margin-top:12px;font-weight:bold}
+.validation{margin-top:25px;padding:15px;background:#f4f4f4;border-left:4px solid #1f3c88}
+footer{text-align:center;padding:20px;color:#777}
+@media(max-width:768px){.container{grid-template-columns:1fr;margin:0 auto}.sidebar{text-align:center}.skills{justify-content:center}.page-section{margin:0 auto;padding:25px}}
